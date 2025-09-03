@@ -1,42 +1,5 @@
 #!/bin/python3
 
-# 1.  Få opp en enkel python server som gir sitt host-port nummer som respons
-
-# 2. Lag et shell script som deployer flere av denne serveren på forskjellige noder på klusteret
-#   - input: antall noder som skal kjøre
-#   - output: en json streng som viser alle host-port komboene av serverene som kjører
-#       - Lage en mekanisme som finner ut om en node er ledig
-
-
-
-
-
-# from flask import Flask, request
-# import sys
-
-# app = Flask(__name__)
-
-# @app.route("/helloworld", methods=["GET"])
-# def helloworld():
-#     print(f"request.host: {request.host}")
-#     return request.host
-
-
-# if __name__ == "__main__":
-#     HOST = "0.0.0.0"
-#     PORT = 50153
-#     print(f"Starting server at {HOST}:{PORT}")
-
-
-#     if len(sys.argv) > 1:
-#         HOST = sys.argv[1]
-#     if len(sys.argv) > 2:
-#         PORT = int(sys.argv[2])
-
-#     app.run(host=HOST, port=PORT)
-
-
-
 
 import socketserver
 import sys
