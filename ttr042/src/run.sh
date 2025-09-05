@@ -38,7 +38,6 @@ for node in "${nodes[@]}"; do
 done
 
 
-
 # Print the host:port combinations
 json_array="["
 while IFS= read -r line; do

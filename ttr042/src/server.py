@@ -12,7 +12,7 @@ class TCPHandler(socketserver.BaseRequestHandler):
         request_line = data.splitlines()[0]
         method, path, _ = request_line.split()
 
-        # Find the host header
+        # Find the host and port number
         host_header = None
         for line in data.splitlines():
             if line.lower().startswith("host"):
@@ -39,6 +39,7 @@ class TCPHandler(socketserver.BaseRequestHandler):
 
 
 if __name__ == "__main__":
+    # Default host and port, unless args are specified
     HOST = "0.0.0.0"
     PORT = 50153
 
